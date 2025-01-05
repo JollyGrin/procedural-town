@@ -7,6 +7,7 @@
   import Lights from "./Lights.svelte";
   import { playerStore } from "$lib/store/PlayerStore/store";
   import ProceduralBuilding from "$lib/components/Building/ProceduralBuilding.svelte";
+  import Person from "$lib/components/Building/Person.svelte";
 
   const alignConst = -1;
   $: players = $playerStore;
@@ -37,6 +38,7 @@
     seed={index}
   />
   <Cube {position} />
+  <Person {position} />
 {/each}
 
 <!-- {#each tile(4) as slotNumber} -->
