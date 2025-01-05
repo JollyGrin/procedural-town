@@ -1,6 +1,5 @@
 <script lang="ts">
   import { T } from "@threlte/core";
-  import { BoxGeometry, MeshBasicMaterial, Vector3 } from "three";
   import { onMount } from "svelte";
 
   // Simple walking parameters
